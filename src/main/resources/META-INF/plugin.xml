@@ -1,19 +1,20 @@
 <idea-plugin>
     <id>com.example.mycompany.flask-route-params-analyzer</id>
-    <name>Flask-route-params-analyzer</name>
-    <vendor email="anas302.kh@gmail.com">Anas</vendor>
+    <name>Flask-Route-Params-Analyzer</name>
+    <vendor>Anas302</vendor>
     <description>Plugin for detecting Flask route parameters mismatches</description>
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.python</depends>
     <depends>com.intellij.modules.lang</depends>
     <extensions defaultExtensionNs="com.intellij">
         <localInspection
-            language="Python"
-            shortName="FlaskRouteParamsMismatch"
-            displayName="Flask route parameters mismatch"
-            groupPath="Python"
-            enabledByDefault="true"
-            level="WARNING"
-            implementationClass="com.example.mycompany.flaskrouteparamsanalyzer.FlaskParamsInspection"/>
+                language="Python"
+                shortName="FlaskRouteParamsMismatch"
+                displayName="Flask route parameters mismatch"
+                groupPath="Python"
+                groupName="Flask routes analysis"
+                enabledByDefault="true"
+                level="WARNING"
+                implementationClass="com.example.mycompany.flaskrouteparamsanalyzer.FlaskParamsInspection"/>
     </extensions>
 </idea-plugin>
